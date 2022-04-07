@@ -2,10 +2,11 @@
 
 #First installation
 
+
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install software-properties-common -y
+sudo apt install net-tools software-properties-common -y
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt update -y
 
