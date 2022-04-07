@@ -3,11 +3,11 @@
 - name: Set timezone to Europe/Paris
   timezone:
     name: Europe/Paris
-    #notify: update timezone
+    notify: update timezone
 
-  #handlers:
-   # - name: update timezone
-    #  command: dpkg-reconfigure --frontend noninteractive tzdata
+    handlers:
+      - name: update timezone
+      command: dpkg-reconfigure --frontend noninteractive tzdata
 
 - name: Install NTP
   apt: package=ntp,ntpdate state=present update_cache=yes
