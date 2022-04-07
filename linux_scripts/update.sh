@@ -26,3 +26,7 @@ python3 --version
 pip3 --version
 ansible --version
 
+sudo ansible-pull -U https://github.com/dgaie/public.git
+
+
+
